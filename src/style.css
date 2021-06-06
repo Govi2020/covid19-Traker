@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: lato;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f6fa;
+}
+.app {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-section {
+  flex: 0.7;
+}
+
+@media (max-width: 900px) {
+  .app {
+    flex-direction: column;
+  }
+  .app__stats {
+    flex-direction: column;
+  }
+  .app__stats .InfoBox {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
